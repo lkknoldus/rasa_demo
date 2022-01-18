@@ -11,8 +11,3 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
-  
-- rule: Say 'OK, amendment done! anytime the user says please amend
-  steps:
-  - intent: amend
-  - action: utter_amend 

@@ -1,17 +1,6 @@
 version: "2.0"
 
 nlu:
-- intent: amend
-  examples: |
-    - please amend 
-    - please amend these 
-    - please proceed to amend the term
-    - Diversion Request Form amend
-    - Can you help to amend ICD from  ICD HYDERABAD
-    - I requested amendment to the b/l so we can pay the freight and issue
-    - please replace 1 PALLET, WOODEN
-    - AMENDEMENT REQUESTED FOR
-    - Any amendment to the bill
 - intent: greet
   examples: |
     - hey
@@ -101,3 +90,26 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: remove_seal
+  examples: |
+    - please remove seal [1245A](sealno)
+    - remove seal [BBN1134F](sealno)
+    - remove this seal asap [546438933](sealno)
+    - can you pls remove the seal with no [GH167380](sealno)
+    - delete seal [BA3426178493](sealno)
+    - remove seal having number [6726464GB748](sealno)
+    - can you remove seal [BA2489759430](sealno)
+    - delete seal with no [24RF213TN42422](sealno)
+
+- intent: update_bl
+  examples: |
+    - please revise BL for [HBLU1245A](bl_number)
+    - revise bl number [IUIO321134F](bl_number)
+    - change this BL asap [568432438933](bl_number)
+    - can you pls make changes in the bl with no [GH167JJDII9999380](bl_number)
+    - update BL no [HLLBLU32T2493](bl_number)
+    - can this bl be updated [11995025464GL748](bl_number)
+
+
+

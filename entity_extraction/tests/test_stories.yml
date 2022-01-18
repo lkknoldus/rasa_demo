@@ -71,8 +71,10 @@ stories:
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
+  - action: utter_remove_seal
   - user: |
       no
+      remove seal no
     intent: deny
   - action: utter_goodbye
 
