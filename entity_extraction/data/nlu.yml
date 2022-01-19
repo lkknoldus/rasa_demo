@@ -84,6 +84,14 @@ nlu:
     - so saad
     - so sad
 
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what others call you
+    - what should i call you?
+
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -91,25 +99,30 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: remove_seal
+- intent: my_name
   examples: |
-    - please remove seal [1245A](sealno)
-    - remove seal [BBN1134F](sealno)
-    - remove this seal asap [546438933](sealno)
-    - can you pls remove the seal with no [GH167380](sealno)
-    - delete seal [BA3426178493](sealno)
-    - remove seal having number [6726464GB748](sealno)
-    - can you remove seal [BA2489759430](sealno)
-    - delete seal with no [24RF213TN42422](sealno)
+    - my name is [ashish]{"entity":"name","value":"ashish"}
+    - my name is [rahul]{"entity":"name","value":"rahul"}
+    - my name is [apneet]{"entity":"name","value":"apneet"}
+    - [ashish]{"entity":"name","value":"ashish"} is my name
+    - [ashish]{"entity":"name","value":"ashish"} this side
+    - people call me [ashish]{"entity":"name","value":"ashish"}
 
-- intent: update_bl
+- intent: mobile_number
   examples: |
-    - please revise BL for [HBLU1245A](bl_number)
-    - revise bl number [IUIO321134F](bl_number)
-    - change this BL asap [568432438933](bl_number)
-    - can you pls make changes in the bl with no [GH167JJDII9999380](bl_number)
-    - update BL no [HLLBLU32T2493](bl_number)
-    - can this bl be updated [11995025464GL748](bl_number)
+    - my number is [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"} is my number
+    - my nobile number is [8209829808]{"entity":"number"}
 
+- intent: play_video
+  examples: |
+    - play the mentioned video
+    - open the url
+    - open the link in browser
+    - show me the video that i asked for
 
-
+- intent: out_of_scope
+  examples: |
+    - 2+4
+    - cats
